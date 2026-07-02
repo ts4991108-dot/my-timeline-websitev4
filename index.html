@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Timeline — A private timeline for the people you love</title>
+<meta name="description" content="My Timeline is a private, collaborative app for capturing a life story as it happens — organized by age, shared only with the family and friends you invite." />
+<link rel="icon" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="18" fill="#4F46E5"/>
+          <line x1="12" y1="36" x2="52" y2="36" stroke="rgba(255,255,255,0.55)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="20" cy="36" r="4" fill="#fff"/>
+          <circle cx="34" cy="36" r="4" fill="#fff"/>
+          <circle cx="48" cy="36" r="6.5" fill="#FB923C"/>
+        </svg>
+      </span>
+      <span class="brand__word">My Timeline</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+
+    <a class="btn btn--primary btn--sm nav__cta" href="#waitlist">Join the waitlist</a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#privacy">Privacy</a>
+    <a class="btn btn--primary" href="#waitlist">Join the waitlist</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Now building — early access opening soon</p>
+        <h1>Every moment,<br>in order.</h1>
+        <p class="hero__sub">
+          My Timeline is a private place to keep the story of a life —
+          organized by age, filled in together with the people who love them most.
+        </p>
+
+        <form class="waitlist-form" id="heroForm" novalidate>
+          <label class="sr-only" for="heroEmail">Email address</label>
+          <input class="waitlist-form__input" id="heroEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button class="btn btn--primary" type="submit">
+            <span class="btn__label">Join the waitlist</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+        <p class="waitlist-form__status" id="heroStatus" role="status" aria-live="polite"></p>
+
+        <p class="hero__note">No spam. One email when we open the doors.</p>
+      </div>
+
+      <div class="hero__art reveal reveal--delay-1" aria-hidden="true">
+        <div class="phone phone--lg">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="mock-topbar">
+              <span class="mock-topbar__action">Timelines</span>
+              <span class="mock-topbar__title">Baby June</span>
+              <span class="mock-topbar__action">⋯</span>
+            </div>
+            <div class="mock-rail">
+
+              <div class="mock-yearhead"><span>Born</span></div>
+
+              <div class="mock-row">
+                <div class="mock-rail-line"></div>
+                <div class="mock-dot mock-dot--birth"></div>
+                <div class="mock-card">
+                  <div class="mock-thumb mock-thumb--a"></div>
+                  <p class="mock-card__title">Hello, world</p>
+                  <p class="mock-card__date">March 2, 2026</p>
+                </div>
+              </div>
+
+              <div class="mock-yearhead"><span>Age 1</span></div>
+
+              <div class="mock-row">
+                <div class="mock-rail-line"></div>
+                <div class="mock-dot"></div>
+                <div class="mock-card">
+                  <div class="mock-thumb mock-thumb--b"></div>
+                  <p class="mock-card__title">First steps</p>
+                  <p class="mock-card__date">April 14, 2027</p>
+                </div>
+              </div>
+
+              <div class="mock-row">
+                <div class="mock-rail-line"></div>
+                <div class="mock-dot"></div>
+                <div class="mock-card">
+                  <div class="mock-thumb mock-thumb--c"></div>
+                  <p class="mock-card__title">Beach day</p>
+                  <p class="mock-card__date">July 9, 2027</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="mock-fab">+</div>
+          </div>
+        </div>
+        <div class="hero__blob" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Features</p>
+        <h2>Built for the story of a life,<br>not a feed of it.</h2>
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" style="--icon-bg:#EEF2FF;--icon-fg:#4F46E5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 18h16M8 18V9M12 18V4M16 18v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Organized by age</h3>
+          <p>Every photo, video, and note falls into place along one continuous rail — by year and by age, from day one onward.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" style="--icon-bg:#FFF7ED;--icon-fg:#FB923C">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M17 9l4-2v10l-4-2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Photos &amp; video, together</h3>
+          <p>Capture moments exactly as they happened. Snap a photo or take a video — both live side by side in the same entry.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" style="--icon-bg:#ECFDF5;--icon-fg:#059669">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M10 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Invite the whole family</h3>
+          <p>Bring in parents, grandparents, or close friends as editors who can add moments, or viewers who just get to watch it grow.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" style="--icon-bg:#FEF2F2;--icon-fg:#DC2626">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Private by default</h3>
+          <p>There's no public feed and no discovery page. A timeline is only ever visible to the people you personally invite.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" style="--icon-bg:#F5F3FF;--icon-fg:#7C3AED">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>More than one story</h3>
+          <p>Keep a separate timeline for each child, or for yourself. Switch between them from one simple home screen.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon" style="--icon-bg:#ECFEFF;--icon-fg:#0891B2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Never miss a moment</h3>
+          <p>The moment someone you invited adds a new entry, you'll know — so the whole family stays in the loop.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>From first entry to<br>a life story, in four steps.</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="steps__item reveal">
+          <span class="steps__num">01</span>
+          <h3>Start a timeline</h3>
+          <p>Give it a name and a starting date — a birthday, or just today.</p>
+        </li>
+        <li class="steps__item reveal reveal--delay-1">
+          <span class="steps__num">02</span>
+          <h3>Add a moment</h3>
+          <p>Drop in a photo, a video, and a few words whenever something's worth keeping.</p>
+        </li>
+        <li class="steps__item reveal reveal--delay-2">
+          <span class="steps__num">03</span>
+          <h3>Invite your people</h3>
+          <p>Bring in family as editors, or share view-only access with anyone else.</p>
+        </li>
+        <li class="steps__item reveal reveal--delay-3">
+          <span class="steps__num">04</span>
+          <h3>Watch it build itself</h3>
+          <p>Every entry files itself under the right year and age — no scrolling to sort things out.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section class="showcase">
+    <div class="wrap showcase__row">
+      <div class="showcase__art reveal" aria-hidden="true">
+        <div class="phone phone--md">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="mock-detail">
+              <div class="mock-detail__media"></div>
+              <div class="mock-detail__body">
+                <p class="mock-detail__title">First steps</p>
+                <p class="mock-detail__date">Age 1 · April 14, 2027</p>
+                <p class="mock-detail__caption">She let go of the couch, looked at Dad, and just... walked. Six wobbly steps and then straight into a hug.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase__copy reveal reveal--delay-1">
+        <p class="eyebrow">The moment, in context</p>
+        <h2>Every entry remembers where it belongs.</h2>
+        <p class="showcase__sub">Tap any moment to see it full-size, alongside the age it happened at and the story behind it — not just a timestamp buried in a camera roll.</p>
+      </div>
+    </div>
+
+    <div class="wrap showcase__row showcase__row--reverse">
+      <div class="showcase__art reveal" aria-hidden="true">
+        <div class="phone phone--md">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="mock-invite">
+              <p class="mock-invite__title">Invite to Baby June</p>
+              <label class="mock-invite__label">Email address</label>
+              <div class="mock-invite__input">grandma@example.com</div>
+              <label class="mock-invite__label">Permission</label>
+              <div class="mock-invite__roles">
+                <div class="mock-invite__role mock-invite__role--active">
+                  <p>Viewer</p>
+                  <span>Can view the timeline only</span>
+                </div>
+                <div class="mock-invite__role">
+                  <p>Editor</p>
+                  <span>Can add and edit entries</span>
+                </div>
+              </div>
+              <div class="mock-invite__btn">Send Invite</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase__copy reveal reveal--delay-1">
+        <p class="eyebrow">Built to be shared</p>
+        <h2>Grandparents get view-only. Co-parents get full access.</h2>
+        <p class="showcase__sub">Decide exactly who can add memories and who just gets to enjoy them — down to each person you invite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="privacy" id="privacy">
+    <div class="wrap privacy__inner">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--light">Privacy first</p>
+        <h2>Not everything needs to be public to be worth keeping.</h2>
+        <p class="privacy__sub">My Timeline was built as the opposite of a social feed. There's no algorithm, no likes, and no way for anyone to find a timeline unless you send them the invite yourself.</p>
+      </div>
+      <ul class="privacy__list reveal reveal--delay-1">
+        <li><span class="privacy__check">✓</span> No public profiles or discovery</li>
+        <li><span class="privacy__check">✓</span> You choose viewer or editor access, person by person</li>
+        <li><span class="privacy__check">✓</span> Remove anyone's access at any time</li>
+        <li><span class="privacy__check">✓</span> Your media stays tied to your account, not an ad platform</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="waitlist">
+    <div class="wrap cta__inner reveal">
+      <h2>Be first to know when My Timeline opens up.</h2>
+      <p>We're building in the open with a small group of early families. Leave your email and we'll send one note when it's your turn.</p>
+
+      <form class="waitlist-form waitlist-form--cta" id="ctaForm" novalidate>
+        <label class="sr-only" for="ctaEmail">Email address</label>
+        <input class="waitlist-form__input" id="ctaEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        <button class="btn btn--light" type="submit">
+          <span class="btn__label">Join the waitlist</span>
+          <span class="btn__spinner" aria-hidden="true"></span>
+        </button>
+      </form>
+      <p class="waitlist-form__status" id="ctaStatus" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a class="brand brand--footer" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="18" fill="#4F46E5"/>
+          <line x1="12" y1="36" x2="52" y2="36" stroke="rgba(255,255,255,0.55)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="20" cy="36" r="4" fill="#fff"/>
+          <circle cx="34" cy="36" r="4" fill="#fff"/>
+          <circle cx="48" cy="36" r="6.5" fill="#FB923C"/>
+        </svg>
+      </span>
+      <span class="brand__word">My Timeline</span>
+    </a>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#waitlist">Join the waitlist</a>
+    </nav>
+    <p class="footer__copy">© <span id="year"></span> My Timeline. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
